@@ -1,0 +1,28 @@
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.app-nav__brand {
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.app-nav__link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.25rem 0.35rem;
+}
+
+.app-nav__link:hover {
+  text-decoration: underline;
+}
+
+.app-nav__link.active {
+  font-weight: 700;
+  text-decoration: underline;
+}

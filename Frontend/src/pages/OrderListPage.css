@@ -1,0 +1,54 @@
+.order-list-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+}
+
+.order-list-page__title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.order-list-page__table-wrap {
+  overflow-x: auto;
+  border: 1px solid #000;
+}
+
+.order-list-page__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.order-list-page__table th,
+.order-list-page__table td {
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+.order-list-page__table th {
+  background: #eee;
+  font-weight: 600;
+}
+
+.order-list-page__table tr:last-child td {
+  border-bottom: none;
+}
+
+.order-list-page__link {
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.order-list-page__status,
+.order-list-page__empty {
+  padding: 0.5rem 0;
+}
+
+.order-list-page__error {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  max-width: 40rem;
+}

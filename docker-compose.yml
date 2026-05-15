@@ -1,0 +1,47 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: versta-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: versta
+    ports:
+      - "5433:5432"
+    volumes:
+      - versta_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d versta"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./Backend
+      dockerfile: Versta.Api/Dockerfile
+    container_name: versta-api
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Postgres: Host=postgres;Port=5432;Database=versta;Username=postgres;Password=postgres
+    ports:
+      - "5214:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:5214
+    container_name: versta-web
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+
+volumes:
+  versta_pgdata:

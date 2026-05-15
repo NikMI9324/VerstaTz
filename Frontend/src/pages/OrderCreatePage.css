@@ -1,0 +1,66 @@
+.order-create-page {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+}
+
+.order-create-page__title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.order-create-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.order-create-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.order-create-page__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.order-create-page__input {
+  padding: 0.35rem 0.4rem;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+
+.order-create-page__input:focus {
+  outline: 1px solid #000;
+  outline-offset: 0;
+}
+
+.order-create-page__err {
+  margin: 0;
+  padding: 0.35rem 0.4rem;
+  border: 1px solid #000;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+.order-create-page__submit {
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.order-create-page__submit:hover:not(:disabled) {
+  background: #333;
+  border-color: #333;
+}
+
+.order-create-page__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

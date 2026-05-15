@@ -1,0 +1,45 @@
+.order-view-page {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+}
+
+.order-view-page__title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.order-view-page__dl {
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+}
+
+.order-view-page__dl dt {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.order-view-page__dl dd {
+  margin: 0;
+}
+
+.order-view-page__back {
+  color: #000;
+  text-decoration: underline;
+}
+
+.order-view-page__status {
+  padding: 0.5rem 0;
+}
+
+.order-view-page__error {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  background: #eee;
+  margin-bottom: 0.5rem;
+}

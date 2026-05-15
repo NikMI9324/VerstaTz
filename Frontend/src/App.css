@@ -1,0 +1,8 @@
+.app-root {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.app-root__main {
+  padding-bottom: 1.5rem;
+}

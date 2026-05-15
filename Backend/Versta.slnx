@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Versta.Api/Versta.Api.csproj" />
+  <Project Path="Versta.Application/Versta.Application.csproj" />
+  <Project Path="Versta.Domain/Versta.Domain.csproj" />
+  <Project Path="Versta.Infrastructure/Versta.Infrastructure.csproj">
+    <BuildDependency Project="Versta.Domain/Versta.Domain.csproj" />
+  </Project>
+</Solution>

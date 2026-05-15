@@ -1,0 +1,32 @@
+# --- Backend (.NET) ---
+Backend/**/[Bb]in/
+Backend/**/[Oo]bj/
+Backend/**/*.user
+Backend/**/*.csproj.user
+Backend/**/packages/
+Backend/**/.vs/
+
+# --- Frontend (Vite / npm) ---
+Frontend/node_modules/
+Frontend/dist/
+Frontend/dist-ssr/
+Frontend/.vite/
+Frontend/*.log
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
+Frontend/.env
+Frontend/.env.*.local
+
+# npm at repo root is not used — install/run only in Frontend/
+/node_modules/
+
+# --- IDE / OS ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.userosscache
+Thumbs.db

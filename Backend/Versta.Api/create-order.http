@@ -1,0 +1,11 @@
+POST http://localhost:5214/api/orders
+Content-Type: application/json
+
+{
+    "senderCity": "Moscow",
+    "senderAddress": "Moscow, Red Square, 1",
+    "recipientCity": "Saint Petersburg",
+    "recipientAddress": "Saint Petersburg, Nevsky Prospect, 1",
+    "weight": 10,
+    "pickupDate": "2026-05-15"
+}
